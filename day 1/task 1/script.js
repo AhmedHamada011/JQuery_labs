@@ -1,4 +1,3 @@
-// $(".image-container").css("display","none");
 var index=0;
 var images = $(".image-container");
 function animate(params) {
@@ -11,8 +10,6 @@ function animate(params) {
         "display":"block",
       }).show().animate({opacity:1},2000);
 
-      // images.eq(0).fadeOut(2000);
-      // images.eq(0).fadeIn(2000);
       console.log(0);
 
     }else if(index == 1)
@@ -24,8 +21,6 @@ function animate(params) {
         "display":"block",
       }).show().animate({opacity:1},2000);
 
-      // images.eq(1).fadeOut(2000);
-      // images.eq(1).fadeIn(2000);
       console.log(1);
 
 
@@ -37,8 +32,6 @@ function animate(params) {
         "display":"block",
       }).show().animate({opacity:1},2000);
 
-      // images.eq(2).fadeOut(2000);
-      // images.eq(2).fadeIn(2000);
       console.log(2);
 
 
@@ -51,8 +44,6 @@ function animate(params) {
         "display":"block",
       }).show().animate({opacity:1},2000);
 
-      // images.eq(3).fadeOut(2000);
-      // images.eq(3).fadeIn(2000);
       console.log(3);
     }
 
@@ -65,10 +56,3 @@ var imageInterval = setInterval(animate,2000)
 $(".stop").on("click",function () {
   clearInterval(imageInterval);
 })
-// $(".image-container").hide();
-
-//   $(".image-container").first().fadeOut(2000).next().fadeIn(2000).end().appendTo('.slider');  
-  // setInterval(function (params) {
-
-  //   $(".image-container").first().fadeOut(2000).next().fadeIn(2000).end();
-  // },0)
